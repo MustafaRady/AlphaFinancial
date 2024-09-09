@@ -1,4 +1,4 @@
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import './animation.css'
 import Footer from './Components/Footer/footer';

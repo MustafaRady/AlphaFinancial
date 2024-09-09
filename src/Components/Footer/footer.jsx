@@ -1,6 +1,5 @@
 import React from 'react'
 import './style.css'
-import hand from '../../assets/footer/heart.png'
 import location from '../../assets/footer/location.png'
 import phone from '../../assets/footer/phone.png'
 import telegram from '../../assets/social Media/telegram.png'

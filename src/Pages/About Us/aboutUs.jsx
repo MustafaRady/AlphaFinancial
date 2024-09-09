@@ -50,11 +50,6 @@ import TalkToPawn from '../../Components/TalkToPawn/talkToPawn';
       threshold:0.1
     })
 
-    const [ref_7,inView_7]=useInView({
-      triggerOnce:true,
-      threshold:0.1
-    })
-
 
    return (
      <div className='greyBackground w-full '>

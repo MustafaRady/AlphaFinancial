@@ -37,6 +37,7 @@ const Smsf = () => {
             
             <div className='absolute top-0 left-0 w-full h-full flex items-center justify-center'>
                 <h1 
+                    ref={ref_1}
                     className={`${inView_1?'downToUp':''} font-bold text-white text-6xl`}
                 >
                     Self-Managed Super Fund (SMSF) Lending

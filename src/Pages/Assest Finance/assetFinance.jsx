@@ -16,7 +16,6 @@ const AssetFinance = () => {
     const [ref_2, inView_2] = useInView({ triggerOnce: true, threshold: 0.1 });
     const [ref_3, inView_3] = useInView({ triggerOnce: true, threshold: 0.1 });
     const [ref_4, inView_4] = useInView({ triggerOnce: true, threshold: 0.1 });
-    const [ref_5, inView_5] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
     <div className='greyBackground w-full'>

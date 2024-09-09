@@ -179,35 +179,47 @@ const closeTooltip=()=>{
         </div>
 
         {
-            onMenuBarOpen && (
-                <div className='absolute xl:hidden top-100 w-full h-auto left-0 bg-white z-10'>
-                    <ul className='flex flex-col  xl:text-2xl  pb-4 pt-10 font-bold '>
-                        <li className='hover:bg-orange-400 hover:text-white py-4 text-black cursor-pointer'><a  ><span className='pl-4'>Home</span></a> </li><hr />
-                        <li className='hover:bg-orange-400 hover:text-white py-4 text-black cursor-pointer'><a  ><span className='pl-4'>About Us</span></a> </li><hr />
-                        <li className='hover:bg-orange-400 hover:text-white py-4 text-black cursor-pointer'><span className='pl-4' onClick={()=>toggleTooltip()}>Services</span> </li><hr />
-                        {onTooltipOpen &&
-                            (
-                                <div className=' flex flex-col  text-black px-4  bg-white z-10'>
-                                <a href='/service1' className='hover:bg-black hover:text-white p-4'>HOME LOAN</a>
-                                <hr  />
-                                <a href='/service3' className='hover:bg-black hover:text-white p-4'>FIRST HOME BUYER</a>
-                                <hr  />
-                                <a href='/service4' className='hover:bg-black hover:text-white p-4'>REFINANCING</a>
-                                <hr  />
-                                <a href='/service5' className='hover:bg-black hover:text-white p-4'>COMMERCIAL LOAN</a>
-                                <hr  />
-                                <a href='/service6' className='hover:bg-black hover:text-white p-4'>ASSET FINANCE</a>
-                                <hr  />
-                                <a href='/service7' className='hover:bg-black hover:text-white p-4'>PERSONAL LOAN</a>
-                                <hr  />
-                                <a href='/service7' className='hover:bg-black hover:text-white p-4'>SEL-MANAGED SUPER FUND (SMFS) LENDING</a>
-                                </div>
-                            )}
-                        <li className='hover:bg-orange-400 hover:text-white py-4 text-black cursor-pointer'><a  ><span className='pl-4'>FAQs</span></a> </li><hr />
-                    </ul>
-                </div>
-            )     
-        }
+  onMenuBarOpen && (
+    <div className='absolute xl:hidden top-100 w-full h-auto left-0 bg-white z-10'>
+      <ul className='flex flex-col  xl:text-2xl  pb-4 pt-10 font-bold '>
+        <li className='hover:bg-orange-400 hover:text-white py-4 text-black cursor-pointer'>
+          <Link to='/'><span className='pl-4'>Home</span></Link>
+        </li>
+        <hr />
+        <li className='hover:bg-orange-400 hover:text-white py-4 text-black cursor-pointer'>
+          <Link to='/about'><span className='pl-4'>About Us</span></Link>
+        </li>
+        <hr />
+        <li className='hover:bg-orange-400 hover:text-white py-4 text-black cursor-pointer'>
+          <span className='pl-4' onClick={() => toggleTooltip()}>Services</span>
+        </li>
+        <hr />
+        {onTooltipOpen && (
+          <div className='flex flex-col text-black px-4 bg-white z-10'>
+            <Link to='/home-loans' className='hover:bg-black hover:text-white p-4'>HOME LOAN</Link>
+            <hr />
+            <Link to='/first-home-buyer' className='hover:bg-black hover:text-white p-4'>FIRST HOME BUYER</Link>
+            <hr />
+            <Link to='/refinancing' className='hover:bg-black hover:text-white p-4'>REFINANCING</Link>
+            <hr />
+            <Link to='/commercial-loan' className='hover:bg-black hover:text-white p-4'>COMMERCIAL LOAN</Link>
+            <hr />
+            <Link to='/asset-finance' className='hover:bg-black hover:text-white p-4'>ASSET FINANCE</Link>
+            <hr />
+            <Link to='/personal-loan' className='hover:bg-black hover:text-white p-4'>PERSONAL LOAN</Link>
+            <hr />
+            <Link to='/smsf' className='hover:bg-black hover:text-white p-4'>SELF-MANAGED SUPER FUND (SMSF) LENDING</Link>
+          </div>
+        )}
+        <li className='hover:bg-orange-400 hover:text-white py-4 text-black cursor-pointer'>
+          <Link to='/faqs'><span className='pl-4'>FAQs</span></Link>
+        </li>
+        <hr />
+      </ul>
+    </div>
+  )
+}
+
         
 
         
