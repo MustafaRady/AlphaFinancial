@@ -1,0 +1,15 @@
+.greyBackground{
+    background-color: #f4f4f1;
+}
+
+.aboutUsImageBorder {
+    border-bottom: 7px solid #ff9021;
+    border-right: 7px solid #ff9021;
+}
+
+.aboutUsImageBorder_2 {
+    border-bottom: 7px solid #ff9021;
+    border-left: 7px solid #ff9021;
+}
+
+

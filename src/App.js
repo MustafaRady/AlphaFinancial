@@ -1,24 +1,41 @@
-import logo from './logo.svg';
+import { Route, Router, Routes } from 'react-router-dom';
 import './App.css';
+import './animation.css'
+import Footer from './Components/Footer/footer';
+import Navbar from './Components/Navbar/navbar';
+import AboutUs from './Pages/About Us/aboutUs';
+import AssetFinance from './Pages/Assest Finance/assetFinance';
+import Commercial from './Pages/Commercial Loan/commercial';
+import Faqs from './Pages/Faqs/faqs';
+import FirstHomeBuyer from './Pages/First Home Buyer/firstHomeBuyer';
+import HomeLoans from './Pages/Home Loans/homeLoans';
+import Home from './Pages/Home/home';
+import PersonalLoan from './Pages/Personal Loan/personalLoan';
+import Refinancing from './Pages/Refinancing/refinancing';
+import Smsf from './Pages/Self Managed Super Fund Lending/Smsf';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/faqs" element={<Faqs />} />
+        <Route path="/asset-finance" element={<AssetFinance />} />
+        <Route path="/commercial-loan" element={<Commercial />} />
+        <Route path="/first-home-buyer" element={<FirstHomeBuyer />} />
+        <Route path="/home-loans" element={<HomeLoans />} />
+        <Route path="/personal-loan" element={<PersonalLoan />} />
+        <Route path="/refinancing" element={<Refinancing />} />
+        <Route path="/smsf" element={<Smsf />} />
+      </Routes>
+
+    <Footer/>
+        
+      
+    </>
+    
   );
 }
 

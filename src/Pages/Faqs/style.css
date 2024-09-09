@@ -1,0 +1,51 @@
+/* Define the animation */
+.animation {
+    animation: expandHeight 1s ease-in;
+}
+
+@keyframes expandHeight {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animation-wrapper {
+    overflow: hidden;
+}
+
+/* Add the keyframes for sliding up */
+@keyframes moveUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Define the animation class */
+  .animate-moveUp {
+    animation: moveUp 0.5s ease-out forwards;
+  }
+  
+  /* Initially, the element is hidden */
+  .opacity-0 {
+    opacity: 0;
+  }
+
+  .borderVideo {
+    border-radius: 0 10px 0 20px; /* top-left, top-right, bottom-right, bottom-left */
+  }
+  
+  .backgroundColor{
+    background-color: #2a2c38;
+  }
+
+  .bocBackground{
+    background-color:#22232d;
+  }

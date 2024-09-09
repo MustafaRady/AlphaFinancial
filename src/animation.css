@@ -1,0 +1,50 @@
+
+.leftToRight {
+    animation: leftToRight 1s ease-in;
+}
+
+@keyframes leftToRight {
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.rightToLeft {
+    animation: rightToLeft 1s ease-in;
+}
+
+@keyframes rightToLeft {
+    from {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.downToUp {
+    animation: downToUp 1s ease-in;
+}
+
+@keyframes downToUp {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.delay{
+    animation-delay: 0.3s;
+}

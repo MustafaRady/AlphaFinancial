@@ -1,0 +1,54 @@
+.body-background{
+    background-color: #2a2c38;
+    color: white;
+}
+
+.bottom-border{
+    border-bottom: 5px solid #ff9021;
+}
+
+.animation{
+    animation: fadeIn  1s ease-in;
+
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.leftToRight{
+    animation: leftToRight 1s ease-in;
+}
+
+@keyframes leftToRight {
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.black-background{
+    background-color: #22232d;
+}
+
+.bottom-border-orange{
+    border-bottom: 10px solid #ff9021;
+}
+
+
+
+
+
+
