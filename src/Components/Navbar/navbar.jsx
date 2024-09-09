@@ -48,7 +48,7 @@ const closeTooltip=()=>{
             <div className='w-11/12 mx-auto'>
                 <div className='w-full flex flex-row items-center justify-between font-semibold gap-x-5'>
                     <Link
-                        to={'/about'}
+                        to={'/'}
                         onClick={()=>closeTooltip()}
                     >
                         <div className='img ' >
